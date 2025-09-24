@@ -1,0 +1,15 @@
+# robots.txt for Logical Manufacturing Solution Ltd
+# Tells search engines what they can/cannot crawl
+
+# Allow all search engines to access everything
+User-agent: *
+Allow: /
+
+# Block unnecessary build/system files
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /public/
+Disallow: /dist/
+
+# Point to the sitemap
+Sitemap: https://logical-manufacturers.netlify.app/sitemap.xml
