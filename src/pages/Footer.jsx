@@ -72,7 +72,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="w-5 h-5 text-blue-500" />
-              info@logicalwelding.com
+              logicalmanufacturingsolution@gmail.com
             </li>
             <li className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-blue-500" />

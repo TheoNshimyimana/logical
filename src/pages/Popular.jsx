@@ -9,6 +9,7 @@ import Door1 from "../images/sliding-door.jpeg";
 import Door2 from "../images/door1.jpeg";
 import Window1 from "../images/window1.jpeg";
 import Window2 from "../images/window2.jpeg";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -150,9 +151,9 @@ function Popular() {
           <button className="px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg shadow hover:bg-gray-100 transition">
             View Portfolio
           </button>
-          <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">
+          <Link to="/contact_us" className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">
             Contact Us
-          </button>
+          </Link>
         </div>
       </section>
     </>
