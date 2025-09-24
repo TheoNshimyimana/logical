@@ -79,16 +79,7 @@ const machinery = [
 ];
 
 function Body() {
-  const scrollToServices = () => {
-    const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
-    const element = document.getElementById("services");
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - navbarHeight,
-        behavior: "smooth",
-      });
-    }
-  };
+  
 
   const industries = [
     {

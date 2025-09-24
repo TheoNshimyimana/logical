@@ -254,25 +254,7 @@ export default function Services() {
   ];
 
 
-  const whyChooseUs = [
-    {
-      title: "Experience",
-      description: "Over 15 years in welding and fabrication industry.",
-    },
-    {
-      title: "Durability",
-      description: "We use premium materials for lasting strength.",
-    },
-    {
-      title: "Custom Solutions",
-      description: "Every project is tailored to client needs.",
-    },
-    {
-      title: "Trusted Team",
-      description: "Skilled welders and fabricators delivering excellence.",
-    },
-   
-  ];
+  
 
   return (
     <>
@@ -296,7 +278,7 @@ export default function Services() {
         </section>
 
         {/* Section: Machinery and Equipment */}
-        <section className="mx-auto px-4 md:px-6 py-16">
+        <section className="mx-auto px-4 md:px-6 py-10 ">
           <h2 className="text-3xl font-bold mb-4 text-center">
             Machinery and Equipment
           </h2>
@@ -334,7 +316,7 @@ export default function Services() {
         </section>
 
         {/* Section: Gates, Doors, Windows & Roofing */}
-        <section className="mx-auto px-4 md:px-6 py-16">
+        <section className="px-4 md:px-6 py-4">
           <h2 className="text-3xl font-bold mb-4 text-center">
             Gates, Doors, Windows & Roofing
           </h2>
@@ -372,7 +354,7 @@ export default function Services() {
         </section>
 
         {/* Section: Custom Work */}
-        <section className="bg-gray-950 py-16">
+        <section className="bg-gray-950 py-8">
           <div className="mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold mb-4 text-center">
               Custom Fabrication
@@ -433,44 +415,7 @@ export default function Services() {
         </section>
 
         {/* Section: Why Choose Us */}
-        <section className="mx-auto px-4 py-16 text-center">
-          <h2 className="text-4xl font-bold mb-4">Why Choose Us?</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            {whyChooseUs.map((item, index) => (
-              <div
-                key={index}
-                className="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition"
-              >
-                <h4 className="font-semibold text-lg md:text-xl">
-                  {item.title}
-                </h4>
-                <p className="text-gray-400 text-sm md:text-base mt-2">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="bg-gray-800 py-16 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-white">
-            Ready to Build With Us?
-          </h2>
-          <p className="text-gray-300 mb-4 max-w-2xl mx-auto">
-            Bring your ideas to life with our expert welding and custom
-            fabrication services. We deliver precision, quality, and durability
-            in every project.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg shadow hover:bg-gray-100 transition">
-              View Portfolio
-            </button>
-            <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">
-              Contact Us
-            </button>
-          </div>
-        </section>
+     
 
         {/* Footer */}
       </div>
