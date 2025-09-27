@@ -155,98 +155,81 @@ export default function Services() {
     {
       img: Bed1,
       title: "Modern Beds",
-      description:
-        "Durable and stylish welded beds designed for homes, offices, and factories.",
+      
     },
     {
       img: Bed2,
       title: "Luxury Custom Beds",
-      description:
-        "Tailor-made beds crafted to your specifications for comfort and elegance.",
+      
     },
     {
       img: Bed3,
       title: "Industrial Beds",
-      description:
-        "Robust welded beds suitable for heavy-duty use in industrial settings.",
+      
     },
     {
       img: Bed4,
       title: "Adjustable Beds",
-      description:
-        "Customizable beds offering flexibility and ergonomic comfort.",
+  
     },
     {
       img: Cupboad1,
       title: "Custom Cupboards",
-      description:
-        "Personalized welded cupboards designed to maximize storage and aesthetics.",
+      
     },
     {
       img: Cupboad2,
       title: "Modular Cupboards",
-      description:
-        "Flexible cupboard solutions tailored to your space and functional needs.",
+      
     },
     {
       img: Chair1,
       title: "Office Chairs",
-      description:
-        "Ergonomic welded chairs designed for comfort and long-term use.",
+      
     },
     {
       img: Chair2,
       title: "Custom Dining Chairs",
-      description:
-        "Stylish and durable chairs tailored to your home or restaurant.",
+      
     },
     {
       img: Piptre1,
       title: "Standard Classroom Desks",
-      description:
-        "Durable and ergonomic welded desks designed for schools and training centers.",
+      
     },
     {
       img: Piptre2,
       title: "Adjustable Classroom Desks",
-      description:
-        "Customizable desks with high-precision welding for comfort and long-term use in educational spaces.",
+  
     },
     {
       img: Guide1,
       title: "Safety Guiderails",
-      description:
-        "Custom welded guiderails ensuring safety and durability in any environment.",
+    
     },
     {
       img: Guide2,
       title: "Staircase Guiderails",
-      description:
-        "Stylish and secure guiderails designed for residential and commercial spaces.",
+      
     },
     {
       img: Guide3,
       title: "Outdoor Guiderails",
-      description:
-        "Weather-resistant guiderails for outdoor and industrial applications.",
+      
     },
     {
       img: Rack1,
       title: "Storage Racks",
-      description:
-        "Custom racks designed to organize and store materials efficiently.",
     },
     {
       img: Rack2,
       title: "Display Shelves",
-      description:
-        "Tailor-made shelves ideal for showcasing products or organizing spaces.",
+      
     },
     {
       img: Gate,
       title: "Custom Gates",
-      description:
-        "Durable and elegant welded gates for residential and industrial properties.",
+      
     },
   ];
 

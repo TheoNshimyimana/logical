@@ -30,38 +30,37 @@ const industries = [
   {
     title: "Main Gate",
     img: Gate1,
-    description:
-      "Premium steel main gate solutions with durability and design.",
+    
   },
   {
     title: "Gates",
     img: Gate2,
-    description: "Custom metal gate fabrication with elegant finishes.",
+    
   },
   {
     title: "Roofing",
     img: Roofing1,
-    description: "Strong roofing structures with expert welding.",
+    
   },
   {
     title: "Metal Fabrication",
     img: Roofing2,
-    description: "Industrial fabrication and steel structures.",
+    
   },
   {
     title: "Door",
     img: Door1,
-    description: "Modern doors crafted with precision and strength.",
+    
   },
   {
     title: "Window",
     img: Window1,
-    description: "Durable and stylish welded window solutions.",
+    
   },
   {
     title: "Window",
     img: Window2,
-    description: "Modern welded windows with strong security.",
+    
   },
 ];
 
