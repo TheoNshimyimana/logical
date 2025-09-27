@@ -198,18 +198,20 @@ function ContactUs() {
                   >
                     Mobile: +250 785714552
                   </a>
-                  
                 </div>
-                <BsWhatsapp className="text-blue-500
-                 w-6 h-6 mt-0 ml-10" />
+                <BsWhatsapp
+                  className="text-blue-500
+                 w-6 h-6 mt-0 ml-10"
+                />
                 <div>
                   <a
-                    href="tel:+250 785714552"
+                    href="https://wa.me/250785714552"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="font-semibold text-white"
                   >
                     Whatsapp: +250 785714552
                   </a>
-                  
                 </div>
               </div>
               <div className="flex items-start gap-3">
