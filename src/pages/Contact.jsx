@@ -3,9 +3,8 @@ import banner1 from "../images/banner.jpeg";
 import Footer from "./Footer";
 import Navbar from "../Navbar";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-
-import Loader from "./Loader";
 import { BsWhatsapp } from "react-icons/bs";
+import Loader from "./Loader";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -35,6 +34,7 @@ function ContactUs() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // start loader
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -43,7 +43,7 @@ function ContactUs() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          access_key: "257a564e-a5a6-434b-ba74-78039ad45c5c", // Replace with Web3Forms key
+          access_key: "257a564e-a5a6-434b-ba74-78039ad45c5c", // Replace with your Web3Forms key
           ...formData,
         }),
       });
@@ -61,6 +61,8 @@ function ContactUs() {
     } catch (error) {
       setStatus("error");
       setMessage("⚠️ Failed to send message. Check connection.");
+    } finally {
+      setLoading(false); // stop loader
     }
   };
 
@@ -70,7 +72,7 @@ function ContactUs() {
       <div className="bg-black text-white">
         {/* Hero Section */}
         <section
-          className="relative h-[40vh] sm:h-[50vh] md:h-[60vh] flex items-center justify-center bg-cover bg-center"
+          className="relative h-[30vh] sm:h-[40vh] md:h-[50vh] flex items-center justify-center bg-cover bg-center"
           style={{ backgroundImage: `url(${banner1})` }}
         >
           <div className="absolute inset-0 bg-black/70"></div>
@@ -144,21 +146,18 @@ function ContactUs() {
                   className="w-full p-3 border border-gray-700 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                 ></textarea>
               </div>
-              {/* <button
-                type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition"
-              >
-                Send Message
-              </button> */}
+
+              {/* Submit Button with Loader */}
               <button
                 type="submit"
                 disabled={loading}
                 className={`w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition ${
-                  loading ? "cursor-not-allowed" : ""
+                  loading ? "cursor-not-allowed opacity-75" : ""
                 }`}
               >
                 {loading ? <Loader /> : "Submit"}
               </button>
+
               {message && (
                 <div
                   className={`mt-4 p-3 rounded-lg text-white text-center ${
@@ -193,16 +192,13 @@ function ContactUs() {
                 <Phone className="text-blue-500 w-6 h-6 mt-1" />
                 <div>
                   <a
-                    href="tel:+250 785714552"
+                    href="tel:+250785714552"
                     className="font-semibold text-white"
                   >
                     Mobile: +250 785714552
                   </a>
                 </div>
-                <BsWhatsapp
-                  className="text-blue-500
-                 w-6 h-6 mt-0 ml-10"
-                />
+                <BsWhatsapp className="text-green-500 w-6 h-6 mt-0 ml-10" />
                 <div>
                   <a
                     href="https://wa.me/250785714552"
@@ -210,7 +206,7 @@ function ContactUs() {
                     rel="noopener noreferrer"
                     className="font-semibold text-white"
                   >
-                    Whatsapp: +250 785714552
+                    WhatsApp: +250 785714552
                   </a>
                 </div>
               </div>

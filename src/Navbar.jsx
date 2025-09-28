@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import LogoNav from "./assets/logo.png";
+import LogoNav from "./assets/Logo2.png";
 
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,7 +37,7 @@ function Navbar() {
         <img
           src={LogoNav}
           alt="Company Logo"
-          className="hidden sm:block h-12 w-12 sm:h-16 md:h-20 object-contain"
+          className="hidden sm:block h-30 w-30 rounded-full sm:h-16 md:h-20 object-contain"
         />
         <span className="font-bold text-lg sm:text-xl md:text-2xl text-white">
           Logical Manufacturing Solution Ltd

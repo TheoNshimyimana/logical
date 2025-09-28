@@ -27,86 +27,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const industries = [
-  {
-    title: "Main Gate",
-    img: Gate1,
-    
-  },
-  {
-    title: "Gates",
-    img: Gate2,
-    
-  },
-  {
-    title: "Roofing",
-    img: Roofing1,
-    
-  },
-  {
-    title: "Metal Fabrication",
-    img: Roofing2,
-    
-  },
-  {
-    title: "Door",
-    img: Door1,
-    
-  },
-  {
-    title: "Window",
-    img: Window1,
-    
-  },
-  {
-    title: "Window",
-    img: Window2,
-    
-  },
+  { title: "Main Gate", img: Gate1, description: "Premium steel main gate solutions with durability and design." },
+  { title: "Gates", img: Gate2, description: "Custom metal gate fabrication with elegant finishes." },
+  { title: "Roofing", img: Roofing1, description: "Strong roofing structures with expert welding." },
+  { title: "Metal Fabrication", img: Roofing2, description: "Industrial fabrication and steel structures." },
+  { title: "Door", img: Door1, description: "Modern doors crafted with precision and strength." },
+  { title: "Window", img: Window1, description: "Durable and stylish welded window solutions." },
+  { title: "Window", img: Window2, description: "Modern welded windows with strong security." },
 ];
 
 const machinery = [
-  {
-    img: JuiceMaker,
-    title: "Juice Maker Machine",
-    description:
-      "Efficient machines for fresh juice extraction from various fruits.",
-  },
-  {
-    img: GrainGrinder,
-    title: "Grain Grinding Machine",
-    description:
-      "Robust grinders for maize, millet, and sorghum into fine flour.",
-  },
-  {
-    img: ChaffCutter,
-    title: "Chaff Cutter Machine",
-    description: "Reliable machines for cutting and processing straw and hay.",
-  },
-  {
-    img: Potato,
-    title: "Potato Processing Machine",
-    description: "Peeling, slicing, and processing machines for potatoes.",
-  },
-  {
-    img: Rice,
-    title: "Rice Milling Machine",
-    description: "Modern milling machines for rice processing.",
-  },
-  {
-    img: Grinder,
-    title: "Food Grinder",
-    description: "Multi-purpose grinders for food and industrial use.",
-  },
-  {
-    img: Ground,
-    title: "Groundnut Processing Machine",
-    description: "Machines designed for roasting and processing groundnuts.",
-  },
-  {
-    img: Pea,
-    title: "Peanut Machine",
-    description: "Compact machines for peanut shelling and processing.",
-  },
+  { img: JuiceMaker, title: "Juice Maker Machine", description: "Efficient machines for fresh juice extraction from various fruits." },
+  { img: GrainGrinder, title: "Grain Grinding Machine", description: "Robust grinders for maize, millet, and sorghum into fine flour." },
+  { img: ChaffCutter, title: "Chaff Cutter Machine", description: "Reliable machines for cutting and processing straw and hay." },
+  { img: Potato, title: "Potato Processing Machine", description: "Peeling, slicing, and processing machines for potatoes." },
+  { img: Rice, title: "Rice Milling Machine", description: "Modern milling machines for rice processing." },
+  { img: Grinder, title: "Food Grinder", description: "Multi-purpose grinders for food and industrial use." },
+  { img: Ground, title: "Groundnut Processing Machine", description: "Machines designed for roasting and processing groundnuts." },
+  { img: Pea, title: "Peanut Machine", description: "Compact machines for peanut shelling and processing." },
 ];
 
 function Body() {
@@ -114,7 +52,7 @@ function Body() {
     dots: true,
     infinite: true,
     speed: 600,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -130,16 +68,16 @@ function Body() {
     <div className="overflow-x-hidden">
       {/* HERO SECTION */}
       <section
-        className="relative bg-cover bg-center text-white flex items-center h-[60vh] sm:h-[70vh] md:h-[80vh]"
+        className="relative bg-cover bg-center text-white flex items-center h-[40vh] sm:h-[50vh] md:h-[60vh]"
         style={{ backgroundImage: `url(${banner1})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
-        <div className="relative z-10 w-full mx-auto px-4 sm:px-6">
-          <div className="space-y-6 max-w-2xl mx-auto my-16">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-snug">
+        <div className="relative z-10  mx-aut0 px-4 sm:px-6">
+          <div className="space-y-6  mx-auto">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug">
               Logical Manufacturing Solution Ltd
             </h1>
-            <p className="text-sm sm:text-base md:text-lg text-gray-300">
+            <p className="text-sm sm:text-base max-w-1/2 md:text-lg text-gray-300">
               Since 2010, we provide welding, fabrication, and industrial
               solutions. From gates and roofing to piping and repairs, we build
               with quality and precision.
@@ -163,7 +101,7 @@ function Body() {
       </section>
 
       {/* INDUSTRIES SECTION */}
-      <section className="bg-black py-8">
+      <section className="bg-black py-4">
         <div className="w-full mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white mb-12">
             Explore Our Expertise
@@ -173,7 +111,7 @@ function Body() {
             {industries.map((item, i) => (
               <div key={i} className="px-2">
                 <div className="bg-gray-900 rounded-xl shadow-md hover:shadow-2xl hover:scale-105 transition flex flex-col h-full">
-                  <div className="w-full h-40 sm:h-48 md:h-56 lg:h-64 flex-shrink-0">
+                  <div className="w-full px-0 h-40 sm:h-48 md:h-56 lg:h-64 flex-shrink-0">
                     <img
                       src={item.img}
                       alt={item.title}
@@ -184,7 +122,7 @@ function Body() {
                     <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-sm md:text-base text-gray-400 break-words">
+                    <p className="hidden sm:block mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto">
                       {item.description}
                     </p>
                   </div>
@@ -196,7 +134,7 @@ function Body() {
       </section>
 
       {/* MACHINERY SECTION */}
-      <section className="bg-black text-white py-8">
+      <section className="bg-black text-white py-4">
         <div className="max-w-full mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6">
             Machinery and Equipment

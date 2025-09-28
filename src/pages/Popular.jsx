@@ -170,7 +170,7 @@ function Popular() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gray-800 py-6 text-center">
+      <section className="bg-gray-800 py-10 text-center">
         <h2 className="text-2xl font-bold mb-4 text-white">
           Ready to Build With Us?
         </h2>

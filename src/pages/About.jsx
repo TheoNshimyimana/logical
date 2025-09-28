@@ -13,12 +13,12 @@ function AboutUs() {
       <div className="bg-black text-white">
         {/* Hero Section */}
         <section
-          className="relative h-[40vh] sm:h-[50vh] md:h-[60vh] flex items-center justify-center bg-cover bg-center"
+          className="relative h-[40vh] sm:h-[40vh] md:h-[50vh] flex items-center justify-center bg-cover bg-center"
           style={{ backgroundImage: `url(${banner1})` }}
         >
           <div className="absolute inset-0 bg-black/70"></div>
           <div className="relative z-10 text-center px-4 md:px-6">
-            <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold">
               Logical Manufacturing Solution Ltd
             </h1>
             <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto">

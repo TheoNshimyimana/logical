@@ -19,6 +19,7 @@ import Grinder from "../images/machinery/grinder.jpeg";
 import Ground from "../images/machinery/groundnuts.png";
 import Pea from "../images/machinery/small-pea-nuts.jpg";
 
+
 // DoorClosed, windows,gates and roofing
 
 import Roof1 from "../images/weldings/roof1.jpeg";
@@ -47,6 +48,8 @@ import Guide3 from "../images/customs/guide3.png";
 import Rack1 from "../images/customs/rack1.jpeg";
 import Rack2 from "../images/customs/rack2.jpeg";
 import Gate from "../images/customs/gate1.jpeg";
+
+
 
 export default function Services() {
   // Services Data
@@ -155,83 +158,103 @@ export default function Services() {
     {
       img: Bed1,
       title: "Modern Beds",
-      
+      description:
+        "Durable and stylish welded beds designed for homes, offices, and factories.",
     },
     {
       img: Bed2,
       title: "Luxury Custom Beds",
-      
+      description:
+        "Tailor-made beds crafted to your specifications for comfort and elegance.",
     },
     {
       img: Bed3,
       title: "Industrial Beds",
-      
+      description:
+        "Robust welded beds suitable for heavy-duty use in industrial settings.",
     },
     {
       img: Bed4,
       title: "Adjustable Beds",
-  
+      description:
+        "Customizable beds offering flexibility and ergonomic comfort.",
     },
     {
       img: Cupboad1,
       title: "Custom Cupboards",
-      
+      description:
+        "Personalized welded cupboards designed to maximize storage and aesthetics.",
     },
     {
       img: Cupboad2,
       title: "Modular Cupboards",
-      
+      description:
+        "Flexible cupboard solutions tailored to your space and functional needs.",
     },
     {
       img: Chair1,
       title: "Office Chairs",
-      
+      description:
+        "Ergonomic welded chairs designed for comfort and long-term use.",
     },
     {
       img: Chair2,
       title: "Custom Dining Chairs",
-      
+      description:
+        "Stylish and durable chairs tailored to your home or restaurant.",
     },
     {
       img: Piptre1,
       title: "Standard Classroom Desks",
-      
+      description:
+        "Durable and ergonomic welded desks designed for schools and training centers.",
     },
     {
       img: Piptre2,
       title: "Adjustable Classroom Desks",
-  
+      description:
+        "Customizable desks with high-precision welding for comfort and long-term use in educational spaces.",
     },
     {
       img: Guide1,
       title: "Safety Guiderails",
-    
+      description:
+        "Custom welded guiderails ensuring safety and durability in any environment.",
     },
     {
       img: Guide2,
       title: "Staircase Guiderails",
-      
+      description:
+        "Stylish and secure guiderails designed for residential and commercial spaces.",
     },
     {
       img: Guide3,
       title: "Outdoor Guiderails",
-      
+      description:
+        "Weather-resistant guiderails for outdoor and industrial applications.",
     },
     {
       img: Rack1,
-      title: "Storage Racks",
+      title: "Store Racks",
+      description:
+        "Custom racks designed to organize and store materials efficiently.",
     },
     {
       img: Rack2,
       title: "Display Shelves",
-      
+      description:
+        "Tailor-made shelves ideal for showcasing products or organizing spaces.",
     },
     {
       img: Gate,
       title: "Custom Gates",
-      
+      description:
+        "Durable and elegant welded gates for residential and industrial properties.",
     },
   ];
+
+
+  
 
   return (
     <>
@@ -239,12 +262,12 @@ export default function Services() {
       <div className="bg-black text-white">
         {/* Hero Section */}
         <section
-          className="relative h-[50vh] md:h-[60vh] flex items-center justify-center bg-cover bg-center"
+          className="relative h-[40vh] md:h-[50vh] flex items-center justify-center bg-cover bg-center"
           style={{ backgroundImage: `url(${banner1})` }}
         >
           <div className="absolute inset-0 bg-black/70"></div>
           <div className="relative z-10 text-center px-4 md:px-6">
-            <h1 className="text-3xl md:text-6xl font-bold">
+            <h1 className="text-3xl md:text-5xl font-bold">
               Logical Manufacturing Solution Ltd
             </h1>
             <p className="mt-4 text-base md:text-lg text-gray-300 max-w-xl md:max-w-2xl mx-auto">
@@ -283,7 +306,7 @@ export default function Services() {
                   <h3 className="text-lg md:text-xl font-semibold">
                     {service.title}
                   </h3>
-                  <p className="text-gray-400 mt-2 text-sm md:text-base">
+                  <p className="hidden sm:block mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto">
                     {service.description}
                   </p>
                 </div>
@@ -378,7 +401,7 @@ export default function Services() {
                           <h3 className="text-lg md:text-xl font-semibold">
                             {service.title}
                           </h3>
-                          <p className="text-gray-400 mt-2 text-sm md:text-base">
+                          <p className="hidden sm:block mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto">
                             {service.description}
                           </p>
                         </div>
@@ -395,4 +418,5 @@ export default function Services() {
       <Footer />
     </>
   );
+
 }
