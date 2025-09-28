@@ -266,7 +266,7 @@ export default function Services() {
           style={{ backgroundImage: `url(${banner1})` }}
         >
           <div className="absolute inset-0 bg-black/70"></div>
-          <div className="relative z-10 text-center px-4 md:px-6">
+          <div className="relative z-10 text-center px-4 md:px-2">
             <h1 className="text-3xl md:text-5xl font-bold">
               Logical Manufacturing Solution Ltd
             </h1>
@@ -306,7 +306,7 @@ export default function Services() {
                   <h3 className="text-lg md:text-xl font-semibold">
                     {service.title}
                   </h3>
-                  <p className="hidden sm:block mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto">
+                  <p className=" sm:block mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto">
                     {service.description}
                   </p>
                 </div>
