@@ -12,3 +12,21 @@
   @apply bg-slate-200
 } */
 
+/* Make slick track stretch items */
+.slick-track {
+  display: flex !important;
+}
+
+/* Make each slide stretch */
+.slick-slide {
+  height: inherit !important;
+  display: flex !important;
+}
+
+/* Make slide content fill */
+.slick-slide > div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
