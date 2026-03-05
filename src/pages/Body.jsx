@@ -55,6 +55,7 @@ const sliderSettings = {
   arrows: false,
   slidesToShow: 5,
   slidesToScroll: 1,
+  initialSlide: 0,
   adaptiveHeight: false,
   responsive: [
     {
