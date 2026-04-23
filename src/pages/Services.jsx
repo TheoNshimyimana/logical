@@ -19,7 +19,6 @@ import Grinder from "../images/machinery/grinder.jpeg";
 import Ground from "../images/machinery/groundnuts.png";
 import Pea from "../images/machinery/small-pea-nuts.jpg";
 
-
 // DoorClosed, windows,gates and roofing
 
 import Roof1 from "../images/weldings/roof1.jpeg";
@@ -48,8 +47,6 @@ import Guide3 from "../images/customs/guide3.png";
 import Rack1 from "../images/customs/rack1.jpeg";
 import Rack2 from "../images/customs/rack2.jpeg";
 import Gate from "../images/customs/gate1.jpeg";
-
-
 
 export default function Services() {
   // Services Data
@@ -253,9 +250,6 @@ export default function Services() {
     },
   ];
 
-
-  
-
   return (
     <>
       <Navbar />
@@ -373,13 +367,29 @@ export default function Services() {
                 speed: 600,
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                centerMode: true,
                 autoplay: true,
                 autoplaySpeed: 3000,
+                centerMode: false,
+
                 responsive: [
-                  { breakpoint: 1024, settings: { slidesToShow: 3 } },
-                  { breakpoint: 768, settings: { slidesToShow: 2 } },
-                  { breakpoint: 480, settings: { slidesToShow: 1 } },
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3,
+                    },
+                  },
+                  {
+                    breakpoint: 768,
+                    settings: {
+                      slidesToShow: 2,
+                    },
+                  },
+                  {
+                    breakpoint: 640,
+                    settings: {
+                      slidesToShow: 1,
+                    },
+                  },
                 ],
               };
 
@@ -418,5 +428,4 @@ export default function Services() {
       <Footer />
     </>
   );
-
 }

@@ -33,7 +33,6 @@ const industries = [
   { title: "Metal Fabrication", img: Roofing2, description: "Industrial fabrication and steel structures." },
   { title: "Door", img: Door1, description: "Modern doors crafted with precision and strength." },
   { title: "Window", img: Window1, description: "Durable and stylish welded window solutions." },
-  { title: "Window", img: Window2, description: "Modern welded windows with strong security." },
 ];
 
 const machinery = [
@@ -52,11 +51,14 @@ const sliderSettings = {
   dots: true,
   infinite: true,
   speed: 500,
-  arrows: false,
+  arrows: true,
   slidesToShow: 5,
   slidesToScroll: 1,
-  initialSlide: 0,
+  initialSlide: 1,
   adaptiveHeight: false,
+  centerMode: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 1280, // laptops
