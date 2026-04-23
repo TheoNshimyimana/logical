@@ -27,59 +27,124 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const industries = [
-  { title: "Main Gate", img: Gate1, description: "Premium steel main gate solutions with durability and design." },
-  { title: "Gates", img: Gate2, description: "Custom metal gate fabrication with elegant finishes." },
-  { title: "Roofing", img: Roofing1, description: "Strong roofing structures with expert welding." },
-  { title: "Metal Fabrication", img: Roofing2, description: "Industrial fabrication and steel structures." },
-  { title: "Door", img: Door1, description: "Modern doors crafted with precision and strength." },
-  { title: "Window", img: Window1, description: "Durable and stylish welded window solutions." },
+  {
+    title: "Main Gate",
+    img: Gate1,
+    description:
+      "Premium steel main gate solutions with durability and design.",
+  },
+  {
+    title: "Gates",
+    img: Gate2,
+    description: "Custom metal gate fabrication with elegant finishes.",
+  },
+  {
+    title: "Roofing",
+    img: Roofing1,
+    description: "Strong roofing structures with expert welding.",
+  },
+  {
+    title: "Metal Fabrication",
+    img: Roofing2,
+    description: "Industrial fabrication and steel structures.",
+  },
+  {
+    title: "Door",
+    img: Door1,
+    description: "Modern doors crafted with precision and strength.",
+  },
+  {
+    title: "Window",
+    img: Window1,
+    description: "Durable and stylish welded window solutions.",
+  },
 ];
 
 const machinery = [
-  { img: JuiceMaker, title: "Juice Maker Machine", description: "Efficient machines for fresh juice extraction from various fruits." },
-  { img: GrainGrinder, title: "Grain Grinding Machine", description: "Robust grinders for maize, millet, and sorghum into fine flour." },
-  { img: ChaffCutter, title: "Chaff Cutter Machine", description: "Reliable machines for cutting and processing straw and hay." },
-  { img: Potato, title: "Potato Processing Machine", description: "Peeling, slicing, and processing machines for potatoes." },
-  { img: Rice, title: "Rice Milling Machine", description: "Modern milling machines for rice processing." },
-  { img: Grinder, title: "Food Grinder", description: "Multi-purpose grinders for food and industrial use." },
-  { img: Ground, title: "Groundnut Processing Machine", description: "Machines designed for roasting and processing groundnuts." },
-  { img: Pea, title: "Peanut Machine", description: "Compact machines for peanut shelling and processing." },
+  {
+    img: JuiceMaker,
+    title: "Juice Maker Machine",
+    description:
+      "Efficient machines for fresh juice extraction from various fruits.",
+  },
+  {
+    img: GrainGrinder,
+    title: "Grain Grinding Machine",
+    description:
+      "Robust grinders for maize, millet, and sorghum into fine flour.",
+  },
+  {
+    img: ChaffCutter,
+    title: "Chaff Cutter Machine",
+    description: "Reliable machines for cutting and processing straw and hay.",
+  },
+  {
+    img: Potato,
+    title: "Potato Processing Machine",
+    description: "Peeling, slicing, and processing machines for potatoes.",
+  },
+  {
+    img: Rice,
+    title: "Rice Milling Machine",
+    description: "Modern milling machines for rice processing.",
+  },
+  {
+    img: Grinder,
+    title: "Food Grinder",
+    description: "Multi-purpose grinders for food and industrial use.",
+  },
+  {
+    img: Ground,
+    title: "Groundnut Processing Machine",
+    description: "Machines designed for roasting and processing groundnuts.",
+  },
+  {
+    img: Pea,
+    title: "Peanut Machine",
+    description: "Compact machines for peanut shelling and processing.",
+  },
 ];
 
 function Body() {
-const sliderSettings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  arrows: true,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  initialSlide: 1,
-  adaptiveHeight: false,
-  centerMode: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-    {
-      breakpoint: 1280, // laptops
-      settings: {
-        slidesToShow: 4,
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    arrows: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    adaptiveHeight: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: false,
+
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 4,
+        },
       },
-    },
-    {
-      breakpoint: 1024, // tablets
-      settings: {
-        slidesToShow: 3,
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
       },
-    },
-    {
-      breakpoint: 640, // mobile
-      settings: {
-        slidesToShow: 2,
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
       },
-    },
-  ],
-};
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div className="overflow-x-hidden">
@@ -119,7 +184,7 @@ const sliderSettings = {
 
       {/* INDUSTRIES SECTION */}
       <section className="bg-black py-4">
-        <div className="w-full mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 overflow-hidden">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white mb-12">
             Explore Our Expertise
           </h2>
@@ -127,7 +192,7 @@ const sliderSettings = {
           <Slider {...sliderSettings}>
             {industries.map((item, i) => (
               <div key={i} className="px-2 h-full">
-                <div className="bg-gray-900 rounded-xl shadow-md hover:shadow-2xl hover:scale-105 transition flex flex-col h-full">
+                <div className="bg-gray-900 rounded-xl shadow-md hover:shadow-2xl hover:scale-105 transition flex flex-col h-full min-w-0 overflow-hidden">
                   {/* Image */}
                   <div className="w-full h-48 flex-shrink-0">
                     <img

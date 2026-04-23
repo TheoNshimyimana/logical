@@ -272,7 +272,7 @@ export default function Services() {
         </section>
 
         {/* Section: Machinery and Equipment */}
-        <section className="mx-auto px-4 md:px-6 py-10 ">
+        <section className="max-w-7xl mx-auto px-4 md:px-6 overflow-hidden py-10 ">
           <h2 className="text-3xl font-bold mb-4 text-center">
             Machinery and Equipment
           </h2>
