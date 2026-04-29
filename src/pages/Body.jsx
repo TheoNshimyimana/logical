@@ -110,19 +110,17 @@ function Body() {
     dots: true,
     infinite: true,
     speed: 500,
-    arrows: true,
-    slidesToShow: 5,
+    arrows: false,
+    slidesToShow: 4, // default (desktop)
     slidesToScroll: 1,
-    adaptiveHeight: false,
     autoplay: true,
     autoplaySpeed: 2000,
-    centerMode: false,
 
     responsive: [
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
         },
       },
       {
@@ -134,13 +132,13 @@ function Body() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
         },
       },
     ],
@@ -208,7 +206,7 @@ function Body() {
                       {item.title}
                     </h3>
 
-                    <p className="text-gray-300 text-sm flex-grow">
+                    <p className="hidden sm:block mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto flex-grow">
                       {item.description}
                     </p>
                   </div>

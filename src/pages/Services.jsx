@@ -362,10 +362,11 @@ export default function Services() {
             {/* Slider Settings */}
             {(() => {
               const settings = {
-                dots: true,
+                dots: false,
                 infinite: true,
                 speed: 600,
                 slidesToShow: 4,
+                arrows:false,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 3000,
@@ -411,7 +412,7 @@ export default function Services() {
                           <h3 className="text-lg md:text-xl font-semibold">
                             {service.title}
                           </h3>
-                          <p className="hidden sm:block mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto">
+                          <p className="hidden sm:block mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto flex-grow">
                             {service.description}
                           </p>
                         </div>
